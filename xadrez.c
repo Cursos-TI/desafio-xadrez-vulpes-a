@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Movimento da Torre: recursivo, movendo para a direita 'steps' vezes.
+// Movimento da Torre
 void torre_move(int steps) {
     if (steps <= 0) {
         return;
@@ -10,10 +10,10 @@ void torre_move(int steps) {
     torre_move(steps - 1);
 }
 
-// Movimento da Rainha: recursivo, movendo para a esquerda 'steps' vezes.
+// Movimento da Rainha
 void rainha_move(int steps) {
     if (steps <= 0) {
-        return; // caso base
+        return;
     }
     printf("Esquerda\n");
     rainha_move(steps - 1);
@@ -79,7 +79,7 @@ int main() {
     const int casas_torre = 5;
     const int casas_rainha = 8;
     const int passos_bispo = 5;
-    const int movimentos_cavalo = 3;
+    const int movimentos_cavalo = 1;
 
     // Movimentação do Bispo
     printf("--Bispo--\n");
